@@ -4,7 +4,7 @@ npm install
 npm start
 
 
-Data will be server via  json-server
+Data will be served via  json-server
 
 For json-server:  
   npm install json-server --save
