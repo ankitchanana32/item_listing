@@ -3,38 +3,29 @@ import "./style.css";
 const Productcard = (props) => {
   const { product = {} } = props;
 
-  const extractVariants = (prod) => {
-    let prodvariants = {};
-    prod.Variant.forEach((variant) => {
-      prodvariants[variant.variationId] = {
-        prodId: prod.id,
-        name: prod.name,
-        brand: prod.brand,
-        variantId: variant.variationId,
-        cost: variant.cost,
-        color: variant.color,
-      };
-    });
-    return prodvariants;
-  };
-
-  let [productvariant, setproductvariant] = useState(extractVariants(product));
+  let [productvariant, setproductvariant] = useState(product);
   let [selectedvariantId, setselectedvariantId] = useState(
-    Object.keys(productvariant) && Object.keys(productvariant)[0]
+    Object.keys(product) && Object.keys(product)[0]
   );
   let [selectedVariant, setselectedvariant] = useState(
-    selectedvariantId ? productvariant[selectedvariantId] : {}
+    selectedvariantId
+      ? product[Object.keys(product) && Object.keys(product)[0]]
+      : {}
   );
 
   useEffect(() => {
-    setproductvariant(extractVariants(product));
+    setproductvariant(props.product);
     setselectedvariantId(
-      Object.keys(productvariant) && Object.keys(productvariant)[0]
+      Object.keys(props.product) && Object.keys(props.product)[0]
     );
     setselectedvariant(
-      selectedvariantId ? productvariant[selectedvariantId] : {}
+      selectedvariantId
+        ? props.product[
+            Object.keys(props.product) && Object.keys(props.product)[0]
+          ]
+        : {}
     );
-  }, []);
+  }, [props]);
 
   const updateSelectedvariant = (product, selectedvariantId) => {
     setselectedvariant(product);
