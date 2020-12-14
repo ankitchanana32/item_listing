@@ -1,0 +1,16 @@
+.monthName{
+    background : white;    
+    width : 7px;
+    height: 7px; 
+    border : 1px solid black;
+    display: inline-block;
+    margin: 2% 2% 0 2%; 
+    border-radius : 50%
+}
+.monthFilter{
+    display:flex;
+        flex-direction:column;
+        border : 1px solid black;
+        margin : 2%;
+        padding:1%
+}

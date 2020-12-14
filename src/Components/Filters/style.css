@@ -1,0 +1,7 @@
+.filter{
+    display : flex;
+    flex-Direction : column ; 
+    border : 2px solid black; 
+    margin : 3% ;
+    padding:1%;
+}

@@ -1,0 +1,28 @@
+.colorBox{
+             width : 30px;
+             height: 20px; 
+             border : 1px solid black;
+             display: inline-block;
+             margin: 2% 2% 0 2%; 
+             border-radius : 50%
+
+}
+
+.productCard{
+    display: flex;
+    flex-direction:row;
+    border : 1px solid black;
+    margin : 2%;
+    height : 100px;
+}
+.cardColor{
+    width:40%; 
+    border : 1px solid black;
+    margin : 1px
+}
+.cardDetails{
+    display : flex; 
+    flex-direction : column; 
+    width:60%; 
+    padding:2px;
+}

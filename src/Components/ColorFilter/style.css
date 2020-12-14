@@ -1,0 +1,22 @@
+.colorFilter{
+    display:flex;
+    flex-direction:column;
+    border : 1px solid black;
+    margin : 2%;
+    padding:1%;
+    
+}
+.selectedFilter{
+
+    display:flex;
+    height:35px; 
+    align-content:center;
+}
+.filterColorName{
+    width : 30px;
+     height: 20px; 
+     border : 1px solid black;
+     display: inline-block;
+     margin: 2% 2% 0 2%; 
+     border-radius : 50%;
+}
