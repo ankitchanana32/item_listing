@@ -1,0 +1,16 @@
+.parent{
+    display:flex;
+     height: 500px;
+     width: 90%;
+}
+.filters{
+
+    border : 1px solid red; 
+    width: 30%;
+    height : 100%;
+}
+.productlist{
+    border : 1px solid green;
+    height : 100%;
+    width : 70%;
+}
